@@ -1,0 +1,16 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+     - "8080:8080"
+    networks:
+     - golang-network
+    depends_on: 
+     - redis
+  redis:
+    image: "redis:alpine"
+
+networks:
+ golang-network:
+  driver: bridge
