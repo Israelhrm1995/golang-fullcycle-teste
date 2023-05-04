@@ -1,23 +1,10 @@
-# docker-gs-ping
+# Desafio Go
+Este desafio envolve o uso do Docker para criar um código Go e executá-lo para exibir a frase "Full Cycle Rocks!!" no terminal. Além disso, a imagem gerada pelo Docker não deve ter mais de 2 MB.
 
-A simple Go server/microservice example for [Docker's Go Language Guide](https://docs.docker.com/language/golang/).
+## Execute o desafio
 
-Notable features:
+### Puxe a imagem usando o seguinte comando:
+docker pull 
 
-* Includes a [multi-stage `Dockerfile`](https://github.com/olliefr/docker-gs-ping/blob/main/Dockerfile.multistage).
-* Has a CI pipeline using GitHub Actions to run tests.
-* Has a CD pipeline using GitHub Actions to publish to Docker Hub.
-
-## Want _moar_?!
-
-There is a more advanced example in [olliefr/docker-gs-ping-roach](https://github.com/olliefr/docker-gs-ping-roach) using [CockroachDB](https://github.com/cockroachdb/cockroach).
-
-## Contributing
-
-This was written for an _introduction_ section of the Docker tutorial and as such it favours brevity and pedagogical clarity over robustness. 
-
-Thus, feedback is welcome, but please no nits or pedantry. Ain't nobody got time for that 🙃
-
-## License
-
-[Apache-2.0 License](LICENSE)
+### Execute a imagem usando o seguinte comando:
+docker run --rm 
